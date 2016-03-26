@@ -6,6 +6,10 @@
   "bin": {
     "sidisinsane--npm-module-starter--core-dummy": "bin/bin.core-dummy.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidisinsane/npm-module-starter.git"
+  },
   "scripts": {
     "test": "jest",
     "demo": "rm -rf demo/created && node demo/demo.helpers-file-create.js"

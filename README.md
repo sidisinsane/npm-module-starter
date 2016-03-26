@@ -1,6 +1,6 @@
 # Npm module starter
 
-Skeleton for creating a npm module 
+Skeleton for creating a npm module
 
 ### Module commands
 
@@ -50,6 +50,10 @@ __package.json__
   "main": "index.js",
   "bin": {
     "your-namespace--module-name--core-dummy": "bin/bin.core-dummy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/repo-name.git"
   },
   "scripts": {
     "test": "jest",
