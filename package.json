@@ -1,6 +1,6 @@
 {
   "name": "@sidisinsane/npm-module-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "skeleton for creating a npm module",
   "main": "index.js",
   "bin": {
