@@ -1,0 +1,22 @@
+# UTF-8 encoding and English language for all file extensions
+AddDefaultCharset utf-8
+AddCharset utf-8 .css .csv .geojson .html .js .json .jsonld .php .svg .topojson .xml
+DefaultLanguage en-US
+
+# Compress Files
+<FilesMatch ".(css|csv|geojson|gif|html|jpg|js|json|jsonld|mp3|mp4|pdf|php|png|svg|topojson|webm|webp|xml)$">
+  SetOutputFilter DEFLATE
+</FilesMatch>
+
+# Cache Files 90 Days
+<IfModule mod_expires.c>
+  <FilesMatch ".(css|csv|geojson|gif|html|jpg|js|json|jsonld|mp3|mp4|pdf|php|png|svg|topojson|webm|webp|xml)$">
+    ExpiresActive On
+    ExpiresDefault "access plus 90 days"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_headers.c>
+  <FilesMatch ".(css|csv|geojson|gif|html|jpg|js|json|jsonld|mp3|mp4|pdf|php|png|svg|topojson|webm|webp|xml)$">
+    Header append Cache-Control "public"
+  </FilesMatch>
+</IfModule>

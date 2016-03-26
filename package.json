@@ -1,0 +1,23 @@
+{
+  "name": "@sidisinsane/npm-module-starter",
+  "version": "1.0.0",
+  "description": "skeleton for creating a npm module",
+  "main": "index.js",
+  "bin": {
+    "sidisinsane--npm-module-starter--core-dummy": "bin/bin.core-dummy.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "demo": "rm -rf demo/created && node demo/demo.helpers-file-create.js"
+  },
+  "keywords": [],
+  "author": "Dirk Sidney Jansen <sid@sidisinsane.com> (http://sidisinsane.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "mkdirp": "^0.5.1",
+    "yargs": "^4.3.2"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.9.2"
+  }
+}
